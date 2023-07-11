@@ -36,6 +36,7 @@ This repository contains a nice and neat shopping application where you can add 
 ## Links
 
 - [Live Preview](https://seesmof.github.io/shopping-cart-with-useReducer/)
+- [Icons](https://www.flaticon.com/free-icons/chicken)
 
 ## License
 

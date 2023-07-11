@@ -4,6 +4,6 @@
 
 @layer components {
   .card {
-    @apply bg-white p-4 rounded-xl w-full;
+    @apply bg-white rounded-xl w-full;
   }
 }
