@@ -5,6 +5,7 @@ const groceryItems = [
     price: 2.99,
     image: "apple.png",
     category: "Fruits",
+    isFavorite: false,
   },
   {
     name: "Bananas",
@@ -12,6 +13,7 @@ const groceryItems = [
     price: 1.99,
     image: "banana.png",
     category: "Fruits",
+    isFavorite: false,
   },
   {
     name: "Bread",
@@ -19,6 +21,7 @@ const groceryItems = [
     price: 3.49,
     image: "bread.png",
     category: "Bakery",
+    isFavorite: false,
   },
   {
     name: "Milk",
@@ -26,6 +29,7 @@ const groceryItems = [
     price: 2.99,
     image: "milk.png",
     category: "Dairy",
+    isFavorite: false,
   },
   {
     name: "Eggs",
@@ -33,6 +37,7 @@ const groceryItems = [
     price: 4.99,
     image: "eggs.png",
     category: "Dairy",
+    isFavorite: false,
   },
   {
     name: "Cheese",
@@ -40,6 +45,7 @@ const groceryItems = [
     price: 5.99,
     image: "cheese.png",
     category: "Dairy",
+    isFavorite: false,
   },
   {
     name: "Chicken",
@@ -47,6 +53,7 @@ const groceryItems = [
     price: 8.99,
     image: "chicken.png",
     category: "Meat",
+    isFavorite: false,
   },
   {
     name: "Beef",
@@ -54,6 +61,7 @@ const groceryItems = [
     price: 12.99,
     image: "beef.png",
     category: "Meat",
+    isFavorite: false,
   },
   {
     name: "Pasta",
@@ -61,6 +69,7 @@ const groceryItems = [
     price: 1.99,
     image: "pasta.png",
     category: "Pantry",
+    isFavorite: false,
   },
   {
     name: "Rice",
@@ -68,6 +77,7 @@ const groceryItems = [
     price: 3.99,
     image: "rice.png",
     category: "Pantry",
+    isFavorite: false,
   },
   {
     name: "Tomatoes",
@@ -75,6 +85,7 @@ const groceryItems = [
     price: 1.49,
     image: "tomatoes.png",
     category: "Vegetables",
+    isFavorite: false,
   },
   {
     name: "Cucumbers",
@@ -82,6 +93,7 @@ const groceryItems = [
     price: 0.99,
     image: "cucumbers.png",
     category: "Vegetables",
+    isFavorite: false,
   },
   {
     name: "Carrots",
@@ -89,6 +101,7 @@ const groceryItems = [
     price: 1.29,
     image: "carrots.png",
     category: "Vegetables",
+    isFavorite: false,
   },
   {
     name: "Potatoes",
@@ -96,6 +109,7 @@ const groceryItems = [
     price: 2.99,
     image: "potatoes.png",
     category: "Vegetables",
+    isFavorite: false,
   },
   {
     name: "Soda",
@@ -103,6 +117,7 @@ const groceryItems = [
     price: 4.99,
     image: "soda.png",
     category: "Beverages",
+    isFavorite: false,
   },
   {
     name: "Juice",
@@ -110,6 +125,7 @@ const groceryItems = [
     price: 3.49,
     image: "juice.png",
     category: "Beverages",
+    isFavorite: false,
   },
   {
     name: "Water",
@@ -117,6 +133,7 @@ const groceryItems = [
     price: 1.99,
     image: "water.png",
     category: "Beverages",
+    isFavorite: false,
   },
 ];
 
