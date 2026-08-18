@@ -1,10 +1,29 @@
-const groceryItems = [
+enum Category {
+  Fruit,
+  Bakery,
+  Dairy,
+  Meat,
+  Pantry,
+  Vegetables,
+  Beverages,
+}
+
+type Item = {
+  name: string;
+  quantity: number;
+  price: number;
+  image: string;
+  category: Category;
+  isFavorite: boolean;
+};
+
+export const groceryItems: Item[] = [
   {
     name: "Apples",
     quantity: 3,
     price: 2.99,
     image: "apple.png",
-    category: "Fruits",
+    category: Category.Fruit,
     isFavorite: false,
   },
   {
@@ -12,7 +31,7 @@ const groceryItems = [
     quantity: 5,
     price: 1.99,
     image: "banana.png",
-    category: "Fruits",
+    category: Category.Fruit,
     isFavorite: false,
   },
   {
@@ -20,7 +39,7 @@ const groceryItems = [
     quantity: 1,
     price: 3.49,
     image: "bread.png",
-    category: "Bakery",
+    category: Category.Bakery,
     isFavorite: false,
   },
   {
@@ -28,7 +47,7 @@ const groceryItems = [
     quantity: 1,
     price: 2.99,
     image: "milk.png",
-    category: "Dairy",
+    category: Category.Dairy,
     isFavorite: false,
   },
   {
@@ -36,7 +55,7 @@ const groceryItems = [
     quantity: 12,
     price: 4.99,
     image: "eggs.png",
-    category: "Dairy",
+    category: Category.Dairy,
     isFavorite: false,
   },
   {
@@ -44,7 +63,7 @@ const groceryItems = [
     quantity: 1,
     price: 5.99,
     image: "cheese.png",
-    category: "Dairy",
+    category: Category.Dairy,
     isFavorite: false,
   },
   {
@@ -52,7 +71,7 @@ const groceryItems = [
     quantity: 2,
     price: 8.99,
     image: "chicken.png",
-    category: "Meat",
+    category: Category.Meat,
     isFavorite: false,
   },
   {
@@ -60,7 +79,7 @@ const groceryItems = [
     quantity: 1,
     price: 12.99,
     image: "beef.png",
-    category: "Meat",
+    category: Category.Meat,
     isFavorite: false,
   },
   {
@@ -68,7 +87,7 @@ const groceryItems = [
     quantity: 2,
     price: 1.99,
     image: "pasta.png",
-    category: "Pantry",
+    category: Category.Pantry,
     isFavorite: false,
   },
   {
@@ -76,7 +95,7 @@ const groceryItems = [
     quantity: 1,
     price: 3.99,
     image: "rice.png",
-    category: "Pantry",
+    category: Category.Pantry,
     isFavorite: false,
   },
   {
@@ -84,7 +103,7 @@ const groceryItems = [
     quantity: 4,
     price: 1.49,
     image: "tomatoes.png",
-    category: "Vegetables",
+    category: Category.Vegetables,
     isFavorite: false,
   },
   {
@@ -92,7 +111,7 @@ const groceryItems = [
     quantity: 2,
     price: 0.99,
     image: "cucumbers.png",
-    category: "Vegetables",
+    category: Category.Vegetables,
     isFavorite: false,
   },
   {
@@ -100,7 +119,7 @@ const groceryItems = [
     quantity: 3,
     price: 1.29,
     image: "carrots.png",
-    category: "Vegetables",
+    category: Category.Vegetables,
     isFavorite: false,
   },
   {
@@ -108,7 +127,7 @@ const groceryItems = [
     quantity: 5,
     price: 2.99,
     image: "potatoes.png",
-    category: "Vegetables",
+    category: Category.Vegetables,
     isFavorite: false,
   },
   {
@@ -116,7 +135,7 @@ const groceryItems = [
     quantity: 6,
     price: 4.99,
     image: "soda.png",
-    category: "Beverages",
+    category: Category.Beverages,
     isFavorite: false,
   },
   {
@@ -124,7 +143,7 @@ const groceryItems = [
     quantity: 2,
     price: 3.49,
     image: "juice.png",
-    category: "Beverages",
+    category: Category.Beverages,
     isFavorite: false,
   },
   {
@@ -132,9 +151,7 @@ const groceryItems = [
     quantity: 1,
     price: 1.99,
     image: "water.png",
-    category: "Beverages",
+    category: Category.Beverages,
     isFavorite: false,
   },
 ];
-
-export default groceryItems;
