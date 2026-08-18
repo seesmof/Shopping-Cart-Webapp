@@ -1,4 +1,7 @@
-# For GOD so loved the world, that He gave His Only Son, so that everyone who believes in Him will not perish, but have eternal life. (John 3:16)
-### Hallelujah thank YOU Jesus Christ our Holy Lord GOD Almighty ✝️💗 
+# Shopping Cart
+
+> For God so loved the world that he gave his one and only Son, that whoever believes in him shall not perish but have eternal life. (John 3:16)
+
+## Links
 
 > <a href="https://www.flaticon.com/free-icons/bread" title="bread icons">Bread icons created by Freepik - Flaticon</a> (Icons)
