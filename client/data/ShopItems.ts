@@ -8,7 +8,7 @@ enum Category {
   Beverages = "Beverages",
 }
 
-type Item = {
+export type Item = {
   name: string;
   quantity: number;
   price: number;
