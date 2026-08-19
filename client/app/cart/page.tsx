@@ -60,7 +60,13 @@ export default function CartPage() {
             <Marker variant={"separator"}>
               <MarkerContent>Checkout</MarkerContent>
             </Marker>
-            <div className="border shadow rounded-md p-5 flex gap-5"></div>
+            <div className="border shadow rounded-md p-5 flex gap-5 flex-col">
+              <p>
+                Your total price for all {cart.length} products is $
+                {cart.reduce((partialSum, a) => partialSum + a.price, 0)}.
+              </p>
+              <Button variant={"secondary"}>Checkout</Button>
+            </div>
           </div>
         </div>
       </div>
