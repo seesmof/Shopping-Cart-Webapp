@@ -25,7 +25,7 @@ export default function IndexPage() {
     <div className="min-h-screen">
       <Navbar />
       <main className="bg-white">
-        <div className="mx-auto max-w-md p-3">
+        <div className="mx-auto max-w-2xl p-3">
           <Input
             placeholder="Enter the item name or category..."
             value={input}
