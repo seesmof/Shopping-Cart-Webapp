@@ -1,5 +1,6 @@
 "use client";
 
+import Navbar from "@/components/Navbar";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import {
@@ -13,26 +14,13 @@ import {
 import { groceryItems } from "@/data/ShopItems";
 import { useCart } from "@/store/cart";
 import Image from "next/image";
-import Link from "next/link";
 
 export default function IndexPage() {
-  const { cart, add } = useCart();
+  const { add } = useCart();
 
   return (
     <div className="min-h-screen">
-      <nav className="sticky top-0 z-40 bg-white border-b-2">
-        <div className="max-w-md mx-auto p-3 flex justify-between items-center">
-          <h1 className="font-bold hover:underline underline-offset-4">
-            <Link href={"/"}>CartApp</Link>
-          </h1>
-          <Button className="relative">
-            <p>Cart</p>
-            <div className="absolute -top-1 -right-1 z-50 rounded-full bg-sky-500 w-4 h-4 flex items-center justify-center">
-              {cart.length}
-            </div>
-          </Button>
-        </div>
-      </nav>
+      <Navbar />
       <main className="bg-white">
         <div className="mx-auto max-w-md p-3 grid grid-cols-1 md:grid-cols-2 gap-3">
           {groceryItems.map((item, index) => (
