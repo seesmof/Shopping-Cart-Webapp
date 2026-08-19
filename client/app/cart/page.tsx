@@ -9,7 +9,7 @@ import Image from "next/image";
 import Link from "next/link";
 
 export default function CartPage() {
-  const { cart, remove } = useCart();
+  const { cart, remove, clear } = useCart();
 
   if (cart.length <= 0) {
     return (
@@ -65,7 +65,9 @@ export default function CartPage() {
                 Your total price for all {cart.length} products is $
                 {cart.reduce((partialSum, a) => partialSum + a.price, 0)}.
               </p>
-              <Button variant={"secondary"}>Checkout</Button>
+              <Button variant={"secondary"} onClick={() => clear()}>
+                Checkout
+              </Button>
             </div>
           </div>
         </div>
