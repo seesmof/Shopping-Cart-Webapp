@@ -1,3 +1,5 @@
+"use client";
+
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import {
@@ -9,10 +11,13 @@ import {
   CardTitle,
 } from "@/components/ui/card";
 import { groceryItems } from "@/data/ShopItems";
+import { useCart } from "@/store/cart";
 import Image from "next/image";
 import Link from "next/link";
 
 export default function IndexPage() {
+  const { cart, add } = useCart();
+
   return (
     <div className="min-h-screen">
       <nav className="sticky top-0 z-40 bg-white border-b-2">
@@ -23,7 +28,7 @@ export default function IndexPage() {
           <Button className="relative">
             <p>Cart</p>
             <div className="absolute -top-1 -right-1 z-50 rounded-full bg-sky-500 w-4 h-4 flex items-center justify-center">
-              0
+              {cart.length}
             </div>
           </Button>
         </div>
@@ -47,7 +52,9 @@ export default function IndexPage() {
                 <CardDescription>The item costs ${item.price}.</CardDescription>
               </CardHeader>
               <CardFooter>
-                <Button className={"w-full"}>Add to cart</Button>
+                <Button onClick={() => add(item)} className={"w-full"}>
+                  Add to cart
+                </Button>
               </CardFooter>
             </Card>
           ))}
