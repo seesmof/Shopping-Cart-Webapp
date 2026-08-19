@@ -1,11 +1,11 @@
 enum Category {
-  Fruit,
-  Bakery,
-  Dairy,
-  Meat,
-  Pantry,
-  Vegetables,
-  Beverages,
+  Fruit = "Fruit",
+  Bakery = "Bakery",
+  Dairy = "Dairy",
+  Meat = "Meat",
+  Pantry = "Pantry",
+  Vegetables = "Vegetables",
+  Beverages = "Beverages",
 }
 
 type Item = {
@@ -21,7 +21,7 @@ export const groceryItems: Item[] = [
   {
     name: "Apples",
     quantity: 3,
-    price: 2.99,
+    price: 3,
     image: "apple.png",
     category: Category.Fruit,
     isFavorite: false,
@@ -29,7 +29,7 @@ export const groceryItems: Item[] = [
   {
     name: "Bananas",
     quantity: 5,
-    price: 1.99,
+    price: 2,
     image: "banana.png",
     category: Category.Fruit,
     isFavorite: false,
@@ -37,7 +37,7 @@ export const groceryItems: Item[] = [
   {
     name: "Bread",
     quantity: 1,
-    price: 3.49,
+    price: 4,
     image: "bread.png",
     category: Category.Bakery,
     isFavorite: false,
@@ -45,7 +45,7 @@ export const groceryItems: Item[] = [
   {
     name: "Milk",
     quantity: 1,
-    price: 2.99,
+    price: 3,
     image: "milk.png",
     category: Category.Dairy,
     isFavorite: false,
@@ -53,7 +53,7 @@ export const groceryItems: Item[] = [
   {
     name: "Eggs",
     quantity: 12,
-    price: 4.99,
+    price: 5,
     image: "eggs.png",
     category: Category.Dairy,
     isFavorite: false,
@@ -61,7 +61,7 @@ export const groceryItems: Item[] = [
   {
     name: "Cheese",
     quantity: 1,
-    price: 5.99,
+    price: 6,
     image: "cheese.png",
     category: Category.Dairy,
     isFavorite: false,
@@ -69,7 +69,7 @@ export const groceryItems: Item[] = [
   {
     name: "Chicken",
     quantity: 2,
-    price: 8.99,
+    price: 9,
     image: "chicken.png",
     category: Category.Meat,
     isFavorite: false,
@@ -77,7 +77,7 @@ export const groceryItems: Item[] = [
   {
     name: "Beef",
     quantity: 1,
-    price: 12.99,
+    price: 13,
     image: "beef.png",
     category: Category.Meat,
     isFavorite: false,
@@ -85,7 +85,7 @@ export const groceryItems: Item[] = [
   {
     name: "Pasta",
     quantity: 2,
-    price: 1.99,
+    price: 2,
     image: "pasta.png",
     category: Category.Pantry,
     isFavorite: false,
@@ -93,7 +93,7 @@ export const groceryItems: Item[] = [
   {
     name: "Rice",
     quantity: 1,
-    price: 3.99,
+    price: 4,
     image: "rice.png",
     category: Category.Pantry,
     isFavorite: false,
@@ -101,7 +101,7 @@ export const groceryItems: Item[] = [
   {
     name: "Tomatoes",
     quantity: 4,
-    price: 1.49,
+    price: 2,
     image: "tomatoes.png",
     category: Category.Vegetables,
     isFavorite: false,
@@ -109,7 +109,7 @@ export const groceryItems: Item[] = [
   {
     name: "Cucumbers",
     quantity: 2,
-    price: 0.99,
+    price: 1,
     image: "cucumbers.png",
     category: Category.Vegetables,
     isFavorite: false,
@@ -117,7 +117,7 @@ export const groceryItems: Item[] = [
   {
     name: "Carrots",
     quantity: 3,
-    price: 1.29,
+    price: 1,
     image: "carrots.png",
     category: Category.Vegetables,
     isFavorite: false,
@@ -125,7 +125,7 @@ export const groceryItems: Item[] = [
   {
     name: "Potatoes",
     quantity: 5,
-    price: 2.99,
+    price: 3,
     image: "potatoes.png",
     category: Category.Vegetables,
     isFavorite: false,
@@ -133,7 +133,7 @@ export const groceryItems: Item[] = [
   {
     name: "Soda",
     quantity: 6,
-    price: 4.99,
+    price: 5,
     image: "soda.png",
     category: Category.Beverages,
     isFavorite: false,
@@ -141,7 +141,7 @@ export const groceryItems: Item[] = [
   {
     name: "Juice",
     quantity: 2,
-    price: 3.49,
+    price: 4,
     image: "juice.png",
     category: Category.Beverages,
     isFavorite: false,
@@ -149,7 +149,7 @@ export const groceryItems: Item[] = [
   {
     name: "Water",
     quantity: 1,
-    price: 1.99,
+    price: 2,
     image: "water.png",
     category: Category.Beverages,
     isFavorite: false,
